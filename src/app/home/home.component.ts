@@ -1,5 +1,4 @@
 import { Component, Renderer2 } from '@angular/core';
-import {MatGridListModule} from '@angular/material/grid-list';
 import { HttpClient } from '@angular/common/http';
 import { Data } from '../modals/search';
 import { AllAnimes, Anime } from '../modals/anime';
