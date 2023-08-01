@@ -1,0 +1,88 @@
+.button-1 {
+    background-color: #3286c2;
+    border-radius: 14px;
+    border-style: none;
+
+    color: #adadad;
+    cursor: pointer;
+
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 16px;
+    margin: 5px;
+    width: 350px;
+    color: #2c2c2c;
+    height: 40px;
+  
+  }
+
+  .button-1:hover,
+  .button-1:focus {
+    background-color: #F082AC;
+  }
+
+
+  .button-2 {
+    background-color: #32c251;
+    border-radius: 14px;
+    border-style: none;
+
+    color: #adadad;
+    cursor: pointer;
+
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 16px;
+    margin: 5px;
+    width: 350px;
+    color: #2c2c2c;
+  
+  }
+  .box {
+    box-shadow:
+    0 12.8px 6.2px rgba(0, 0, 0, 0.034),
+    0 16.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 10px 40px rgba(0, 0, 0, 0.12)
+  ;
+  
+    
+    
+    min-height: 200px;
+    width: 50vw;
+    margin: 100px auto;
+    background: white;
+    border-radius: 205px;
+  }
+
+  .button-2:hover,
+  .button-2:focus {
+    background-color: #F082AC;
+  }
+
+  .button-3 {
+    background-color: #ca452d;
+    border-radius: 14px;
+    border-style: none;
+
+    color: #adadad;
+    cursor: pointer;
+
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 16px;
+    margin: 5px;
+    width: 350px;
+    color: #2c2c2c;
+  
+  }
+
+  .button-3:hover,
+  .button-:focus {
+    background-color: #F082AC;
+  }
