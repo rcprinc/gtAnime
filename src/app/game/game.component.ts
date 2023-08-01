@@ -22,7 +22,7 @@ import { HttpClient } from "@angular/common/http";
     public getAnimes(){
         this._http.get<AllAnimes>('https://json.extendsclass.com/bin/413a46e25479').subscribe(animes => {
             const today = new Date();
-            const start = new Date("07/22/2023");
+            const start = new Date("07/26/2023");
             var Difference_In_Time = start.getTime() - today.getTime();
             let Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24 * -1);
             for(let i = 0; i < animes.anime.length; i++){

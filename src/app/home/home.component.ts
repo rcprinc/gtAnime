@@ -27,7 +27,7 @@ constructor(http: HttpClient, private route: ActivatedRoute, private renderer: R
         this.getAnime(parseInt(location.search.substring(4, location.search.length))-1);
     } else {
         const today = new Date();
-        const start = new Date("07/30/2023");
+        const start = new Date("07/26/2023");
         var Difference_In_Time = start.getTime() - today.getTime();
         let Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24 * -1);
         this.getAnime(Math.floor(Difference_In_Days)-1);
@@ -36,7 +36,6 @@ constructor(http: HttpClient, private route: ActivatedRoute, private renderer: R
     //
  
 mixpanel.init("23cf03df4416fe8baa559a4819156dd1", { debug: true, track_pageview: true, persistence: 'localStorage' });
-console.error(Number(localStorage.getItem("Mixpanel")));
 if(Number(localStorage.getItem("Mixpanel")) <= 0){
     const randomNumber = Math.random();
     localStorage.setItem("Mixpanel", randomNumber.toString());
