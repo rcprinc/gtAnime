@@ -5,11 +5,11 @@
     <br>
     <h1 style="text-align: center; color: #9ba0a3; margin-top: 25px;">Guess the Anime!</h1>
 
-    <br>
+
     <div id="image" style="text-align: center;"><img style="width: 70%; height: 10%;" src={{this.usingImage}}
             alt="Image alt text"></div>
 
-    <div *ngIf="this.finished == 1" class="correct"> Correct! <br><br><br> {{this.anime.names[0]}} </div>
+            <div *ngIf="this.finished == 1" class="correct">{{this.anime.names[0]}} </div>
     <div *ngIf="this.finished == 2" class="incorrect"> :( Incorrect <br><br><br> {{this.anime.names[0]}} </div>
 
 
@@ -48,7 +48,7 @@
             <button *ngIf="this.completed <= 5" class="skip" (click)="skip()">Skip</button>
 
         </div>
-
+        <div *ngIf="this.finished == 1" class="correct"> Correct! </div>
 
         <div *ngIf="this.finished == 0" class="searchBox">
             <input id="search" class="searchInput" (keyup.enter)="search()" type="text" name="" placeholder="Search">
