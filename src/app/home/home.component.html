@@ -1,87 +1,78 @@
+<br>
 <button class="home" [routerLink]="['/home']">Home</button>
-<mat-grid-list cols="4" style="height: 600px;">
-    <mat-grid-tile colspan="1">
-        
-    </mat-grid-tile>
-    <mat-grid-tile colspan="2" style="height: 700px;">
-        
-
-        <div class="box" style="width: 80%; height: 96%; background-color: #e5eaf5;">
-        <h1 style="text-align: center; margin-top: 30px; color: #9ba0a3;">Guess the Anime!</h1>
-    
+<div style="height: 1700px;">
+<div class="box" style="width: 40%; height: 1600px; min-width: 330px; background-color: #e5eaf5;">
     <br>
-    <div  id="image" style="text-align: center;"><img style="width: 65%; height: 500px;"  src={{this.usingImage}} alt="Image alt text"></div>
-    
+    <h1 style="text-align: center; color: #9ba0a3; margin-top: 25px;">Guess the Anime!</h1>
+
+    <br>
+    <div id="image" style="text-align: center;"><img style="width: 70%; height: 10%;" src={{this.usingImage}}
+            alt="Image alt text"></div>
+
     <div *ngIf="this.finished == 1" class="correct"> Correct! <br><br><br> {{this.anime.names[0]}} </div>
-    <div *ngIf="this.finished == 2" class="incorrect"> :(  Incorrect <br><br><br> {{this.anime.names[0]}} </div>
+    <div *ngIf="this.finished == 2" class="incorrect"> :( Incorrect <br><br><br> {{this.anime.names[0]}} </div>
 
 
-<div style="text-align: center; margin-top: 0px;">
+    <div style="text-align: center;">
 
-    <div *ngIf="this.completed == 0">
-    <button id="1" *ngIf="this.guess != 1" class="button-1" (click)="switchImage(1)">1</button>
-    <button id="1" *ngIf="this.guess == 1"class="button-1-selected" (click)="switchImage(1)">1</button>
-    <button  *ngIf="this.guess > 2" class="button-1" (click)="switchImage(2)">2</button>
-    <button id="2" *ngIf="this.guess < 2" class="button-1-disabled">2</button>
-    <button id="1" *ngIf="this.guess == 2"class="button-1-selected" (click)="switchImage(2)">2</button>
-    <button  *ngIf="this.guess > 3" class="button-1" (click)="switchImage(3)">3</button>
-    <button id="3" *ngIf="this.guess < 3" class="button-1-disabled">3</button>
-    <button id="3" *ngIf="this.guess == 3"class="button-1-selected" (click)="switchImage(3)">3</button>
-    <button  *ngIf="this.guess > 4" class="button-1" (click)="switchImage(4)">4</button>
-    <button id="4" *ngIf="this.guess < 4" class="button-1-disabled">4</button>
-    <button id="4" *ngIf="this.guess == 4"class="button-1-selected" (click)="switchImage(4)">4</button>
-    <button  *ngIf="this.guess > 5 || this.finished == 2" class="button-1" (click)="switchImage(5)">5</button>
-    <button id="5" *ngIf="this.guess < 5" class="button-1-disabled">5</button>
-    <button id="5" *ngIf="this.guess == 5 && this.finished != 2"class="button-1-selected" (click)="switchImage(5)">5</button>
-    <button *ngIf="this.completed <= 5" class="skip" (click)="skip()">Skip</button>
-    </div>
+        <div *ngIf="this.completed == 0">
+            <button id="1" *ngIf="this.guess != 1" class="button-1" (click)="switchImage(1)">1</button>
+            <button id="1" *ngIf="this.guess == 1" class="button-1-selected" (click)="switchImage(1)">1</button>
+            <button *ngIf="this.guess > 2" class="button-1" (click)="switchImage(2)">2</button>
+            <button id="2" *ngIf="this.guess < 2" class="button-1-disabled">2</button>
+            <button id="1" *ngIf="this.guess == 2" class="button-1-selected" (click)="switchImage(2)">2</button>
+            <button *ngIf="this.guess > 3" class="button-1" (click)="switchImage(3)">3</button>
+            <button id="3" *ngIf="this.guess < 3" class="button-1-disabled">3</button>
+            <button id="3" *ngIf="this.guess == 3" class="button-1-selected" (click)="switchImage(3)">3</button>
+            <button *ngIf="this.guess > 4" class="button-1" (click)="switchImage(4)">4</button>
+            <button id="4" *ngIf="this.guess < 4" class="button-1-disabled">4</button>
+            <button id="4" *ngIf="this.guess == 4" class="button-1-selected" (click)="switchImage(4)">4</button>
+            <button *ngIf="this.guess > 5 || this.finished == 2" class="button-1" (click)="switchImage(5)">5</button>
+            <button id="5" *ngIf="this.guess < 5" class="button-1-disabled">5</button>
+            <button id="5" *ngIf="this.guess == 5 && this.finished != 2" class="button-1-selected"
+                (click)="switchImage(5)">5</button>
+            <button *ngIf="this.completed <= 5" class="skip" (click)="skip()">Skip</button>
+        </div>
 
-    <div *ngIf="this.completed > 0">
-        <button *ngIf="this.completed > 1" class="button-success-bad" (click)="switchImage(1)">1</button>
-        <button *ngIf="this.completed <= 1" class="button-success-good" (click)="switchImage(1)">1</button>
-        <button *ngIf="this.completed > 2" class="button-success-bad" (click)="switchImage(2)">2</button>
-        <button *ngIf="this.completed <= 2" class="button-success-good" (click)="switchImage(2)">2</button>
-        <button *ngIf="this.completed > 3" class="button-success-bad" (click)="switchImage(3)">3</button>
-        <button *ngIf="this.completed <= 3" class="button-success-good" (click)="switchImage(3)">3</button>
-        <button *ngIf="this.completed > 4" class="button-success-bad" (click)="switchImage(4)">4</button>
-        <button *ngIf="this.completed <= 4" class="button-success-good" (click)="switchImage(4)">4</button>
-        <button *ngIf="this.completed > 5" class="button-success-bad" (click)="switchImage(5)">5</button>
-        <button *ngIf="this.completed <= 5" class="button-success-good" (click)="switchImage(5)">5</button>
-        <button *ngIf="this.completed <= 5" class="skip" (click)="skip()">Skip</button>
+        <div *ngIf="this.completed > 0">
+            <button *ngIf="this.completed > 1" class="button-success-bad" (click)="switchImage(1)">1</button>
+            <button *ngIf="this.completed <= 1" class="button-success-good" (click)="switchImage(1)">1</button>
+            <button *ngIf="this.completed > 2" class="button-success-bad" (click)="switchImage(2)">2</button>
+            <button *ngIf="this.completed <= 2" class="button-success-good" (click)="switchImage(2)">2</button>
+            <button *ngIf="this.completed > 3" class="button-success-bad" (click)="switchImage(3)">3</button>
+            <button *ngIf="this.completed <= 3" class="button-success-good" (click)="switchImage(3)">3</button>
+            <button *ngIf="this.completed > 4" class="button-success-bad" (click)="switchImage(4)">4</button>
+            <button *ngIf="this.completed <= 4" class="button-success-good" (click)="switchImage(4)">4</button>
+            <button *ngIf="this.completed > 5" class="button-success-bad" (click)="switchImage(5)">5</button>
+            <button *ngIf="this.completed <= 5" class="button-success-good" (click)="switchImage(5)">5</button>
+            <button *ngIf="this.completed <= 5" class="skip" (click)="skip()">Skip</button>
 
-    </div>
+        </div>
 
 
-    <div *ngIf="this.finished == 0" class="searchBox">
-        <input id="search" class="searchInput" (keyup.enter)="search()" type="text" name="" placeholder="Search" >
-    </div>
+        <div *ngIf="this.finished == 0" class="searchBox">
+            <input id="search" class="searchInput" (keyup.enter)="search()" type="text" name="" placeholder="Search">
+        </div>
 
-    <div *ngIf="this.searchResults" style="margin-top: 100px;">
-    <div *ngFor="let attributes of this.searchResults.data; let i = index;">
-        <button class="button-2" *ngIf="this.searchResults.data[i].attributes.titles.en" (click)="check(this.searchResults.data[i].attributes.titles.en)">
-            {{this.searchResults.data[i].attributes.titles.en}} <br>
-            <span *ngIf="this.searchResults.data[i].attributes.titles.en != this.searchResults.data[i].attributes.titles.en_jp">({{this.searchResults.data[i].attributes.titles.en_jp}})</span>
-        
-        </button>
+        <div *ngIf="this.searchResults" style="margin-top: 100px;">
+            <div *ngFor="let attributes of this.searchResults.data; let i = index;">
+                <button class="button-2" *ngIf="this.searchResults.data[i].attributes.titles.en"
+                    (click)="check(this.searchResults.data[i].attributes.titles.en)">
+                    {{this.searchResults.data[i].attributes.titles.en}} <br>
+                    <span
+                        *ngIf="this.searchResults.data[i].attributes.titles.en != this.searchResults.data[i].attributes.titles.en_jp">({{this.searchResults.data[i].attributes.titles.en_jp}})</span>
+
+                </button>
+            </div>
+        </div>
+
+
+
+        <div style="margin-top: 130px;" class="wrong"> {{this.guesses[0]}} </div>
+        <div class="wrong"> {{this.guesses[1]}} </div>
+        <div class="wrong"> {{this.guesses[2]}} </div>
+        <div class="wrong"> {{this.guesses[3]}} </div>
+        <div class="wrong"> {{this.guesses[4]}} </div>
     </div>
 </div>
-
-
-
-    <div style="margin-top: 130px;" class="wrong"> {{this.guesses[0]}} </div>
-    <div class="wrong"> {{this.guesses[1]}} </div>
-    <div class="wrong"> {{this.guesses[2]}} </div>
-    <div class="wrong"> {{this.guesses[3]}} </div>
-    <div class="wrong"> {{this.guesses[4]}} </div>
-
-
-
-
-
 </div>
-</div>
-    
-    
-    </mat-grid-tile>
-    <mat-grid-tile colspan="1"></mat-grid-tile>
-    </mat-grid-list>

@@ -1,252 +1,249 @@
 .button-1 {
-    background-color: #eba0ad;
-    border-radius: 10px;
-    border-style: none;
+  background-color: #eba0ad;
+  border-radius: 7px;
+  border-style: none;
 
-    color: #adadad;
-    cursor: pointer;
+  color: #adadad;
+  cursor: pointer;
 
-    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    margin: 5px;
-    width: 30px;
-    height: 50px;
-    color: #2c2c2c;
-  }
-  .home {
-    border-radius: 100px;
-    border: 0px solid #E8E8E8;
-    height: 120px;
-    width: 120px;   
-    position: fixed;
-    background-color: #bd9ef7;
-    margin-top: 20px;
-    margin-left: 20px;
-    font-size: 25px;
-    z-index: 6;
-    box-shadow:
-    0 12.8px 6.2px rgba(0, 0, 0, 0.034),
-    0 16.7px 5.3px rgba(0, 0, 0, 0.048),
-    0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 10px 40px rgba(0, 0, 0, 0.12)
-  ;
-  }
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 5px;
+  width: 30px;
+  height: 50px;
+  color: #2c2c2c;
+}
+.home {
+  border-radius: 30px;
+  border: 0px solid #E8E8E8;
+  height: 50px;
+  width: 100px;   
+  background-color: #bd9ef7;
+  margin-left: 20px;
+  font-size: 25px;
+  z-index: 9;
+  box-shadow:
+  0 12.8px 6.2px rgba(0, 0, 0, 0.034),
+  0 16.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 10px 40px rgba(0, 0, 0, 0.12)
+;
+}
 
-  .skip {
-    background-color: #ebdfa0;
-    border-radius: 14px;
-    border-style: none;
+.skip {
+  background-color: #ebdfa0;
+  border-radius: 14px;
+  border-style: none;
 
-    color: #adadad;
-    cursor: pointer;
+  color: #adadad;
+  cursor: pointer;
 
-    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 10px 16px;
-    margin: 5px;
-    width: 70px;
-    height: 50px;
-    color: #2c2c2c;
-  }
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 16px;
+  margin: 5px;
+  width: 70px;
+  height: 50px;
+  color: #2c2c2c;
+}
 
 
-  .box {
-    box-shadow:
-    0 12.8px 6.2px rgba(0, 0, 0, 0.034),
-    0 16.7px 5.3px rgba(0, 0, 0, 0.048),
-    0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 10px 40px rgba(0, 0, 0, 0.12)
-  ;
+.box {
+  box-shadow:
+  0 12.8px 6.2px rgba(0, 0, 0, 0.034),
+  0 16.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 10px 40px rgba(0, 0, 0, 0.12)
+;
+
   
-    
-    
-    min-height: 200px;
-    width: 50vw;
-    margin: 100px auto;
-    background: white;
-    border-radius: 205px;
-  }
-  .button-success-good {
-    background-color: #a0ebb9;
-    border-radius: 10px;
-    border-style: none;
-
-    color: #adadad;
-    cursor: pointer;
-
-    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    margin: 5px;
-    width: 30px;
-    height: 50px;
-    color: #2c2c2c;
-  }
-
-  .button-success-bad {
-    background-color: #eba0ad;
-    border-radius: 10px;
-    border-style: none;
-
-    color: #adadad;
-    cursor: pointer;
-
-    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    margin: 5px;
-    width: 30px;
-    height: 50px;
-    color: #2c2c2c;
-  }
-
-  .button-1-selected {
-    background-color: #a0d2eb;
-    border-radius: 10px;
-    border-style: none;
-
-    color: #adadad;
-    cursor: pointer;
-
-    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    margin: 5px;
-    width: 30px;
-    height: 50px;
-    color: #2c2c2c;
-
-  }
-
-
-  .button-2 {
-    background-color: #bfc8cc;
-    border-radius: 14px;
-    border-style: none;
-
-    color: #adadad;
-    cursor: pointer;
-
-    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    padding: 10px 16px;
-    margin: 5px;
-    width: 60%;
-    color: #2c2c2c;
-
-  }
- 
-  .correct {
-    font-size: 50px;
-    color: #4fa36bfa;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
-  }
-
-  .incorrect {
-    font-size: 50px;
-    color:#eba0ad;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    translate: 0.5s;
-  }
-
-  h1 {
-    font-size: 40px;
-  }
-
-  .wrong {
-    color: #eba0ad;
-    font-size: 30px;
-    margin-top: 15px;
-  }
-
-
-  .button-1-disabled {
-    background-color: #bec8cd;
-    border-radius: 10px;
-    border-style: none;
-
-    color: #adadad;
-    cursor: pointer;
-
-    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    margin: 5px;
-    width: 30px;
-    height: 50px;
-    color: #2c2c2c;
-
-  }
   
-  .skip:hover,
-  .skip:focus {
-    background-color: #F082AC;
-  }
+  min-height: 200px;
+  width: 50vw;
+  margin: auto;
+  background: white;
+  border-radius: 70px;
+}
+.button-success-good {
+  background-color: #a0ebb9;
+  border-radius: 10px;
+  border-style: none;
 
-  .home:hover,
-  .home:focus {
-    background-color: #F082AC;
-  }
+  color: #adadad;
+  cursor: pointer;
 
-  .button-1:hover,
-  .button-1:focus {
-    background-color: #F082AC;
-  }
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 5px;
+  width: 30px;
+  height: 50px;
+  color: #2c2c2c;
+}
 
-  .button-2:hover,
-  .button-2:focus {
-    background-color: #F082AC;
-  }
+.button-success-bad {
+  background-color: #eba0ad;
+  border-radius: 10px;
+  border-style: none;
 
-  .button-2-selected:hover,
-  .button-2-selected:focus {
-    background-color: #F082AC;
-  }
+  color: #adadad;
+  cursor: pointer;
 
-  .searchBox > .searchInput {
-    width: 340px;
-    padding: 0 6px;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 5px;
+  width: 30px;
+  height: 50px;
+  color: #2c2c2c;
+}
+
+.button-1-selected {
+  background-color: #a0d2eb;
+  border-radius: 10px;
+  border-style: none;
+
+  color: #adadad;
+  cursor: pointer;
+
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 5px;
+  width: 30px;
+  height: 50px;
+  color: #2c2c2c;
+
+}
+
+
+.button-2 {
+  background-color: #bfc8cc;
+  border-radius: 14px;
+  border-style: none;
+
+  color: #adadad;
+  cursor: pointer;
+
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 16px;
+  margin: 5px;
+  width: 80%;
+  color: #2c2c2c;
+
+}
+
+.correct {
+  font-size: 50px;
+  color: #4fa36bfa;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.incorrect {
+  font-size: 50px;
+  color:#eba0ad;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  translate: 0.5s;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.wrong {
+  color: #eba0ad;
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+
+.button-1-disabled {
+  background-color: #bec8cd;
+  border-radius: 10px;
+  border-style: none;
+
+  color: #adadad;
+  cursor: pointer;
+
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 5px;
+  width: 30px;
+  height: 50px;
+  color: #2c2c2c;
+
+}
+
+.skip:hover,
+.skip:focus {
+  background-color: #F082AC;
+}
+
+.home:hover,
+.home:focus {
+  background-color: #F082AC;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #F082AC;
+}
+
+.button-2:hover,
+.button-2:focus {
+  background-color: #F082AC;
+}
+
+.button-2-selected:hover,
+.button-2-selected:focus {
+  background-color: #F082AC;
+}
+
+.searchBox > .searchInput {
+  width: 70%;
+  padding: 0 6px;
 }
 
 .searchBox > .searchButton {
-  background: #85a3b9;
-  color : rgb(161, 199, 235);
+background: #85a3b9;
+color : rgb(161, 199, 235);
 }
 
 .searchInput {
-    border:none;
-    background: none;
-    outline:none;
-    float:left;
-    padding: 0;
-    color: rgb(0, 0, 0);
-    font-size: 25px;
-    transition: 0.4s;
-    line-height: 30px;
-    width: 0px;
+  border:none;
+  background: none;
+  outline:none;
+  float:left;
+  padding: 0;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  transition: 0.4s;
+  line-height: 30px;
+  width: 0px;
 }
 
 .searchBox {
-    position: absolute;
-    left: 50%;
-    transform:  translate(-50%,50%);
-    background: #a0d2eb;
-    height: 30px;
-    border-radius: 40px;
-    padding: 10px;
+  position: absolute;
+  left: 50%;
+  transform:  translate(-50%,50%);
+  background: #a0d2eb;
+  height: 30px;
+  border-radius: 40px;
+  padding: 10px;
 
 }
 
 
-  
