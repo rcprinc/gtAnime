@@ -4,29 +4,29 @@
 
 <div class="box" style="width: 25%; height: 85%; min-width: 330px; background-color: #e5eaf5;">
     <div style="height: 20px; width: 100%;;"></div>
-            <div *ngFor="let anime of this.allAnime.anime; let i = index;" style="text-align: center; height: 35px; margin-top: 7px;">
+            <div *ngFor="let anime of this.allAnime.anime; let i = index;" style="text-align: center; height: 37px; margin-top: 8px;">
     
                 <button *ngIf="this.completed[i] == 0" class="button-1" [routerLink]="['/']" [queryParams]="{id: i+1}"><b>{{i+1}}</b></button>
                 <button *ngIf="this.completed[i] >= 6" class="button-3" [routerLink]="['/']" [queryParams]="{id: i+1}">{{this.allAnime.anime[i].names[0]}}</button>
                 <button *ngIf="this.completed[i] > 0 && this.completed[i] < 6" class="button-2" [routerLink]="['/']" [queryParams]="{id: i+1}">{{this.allAnime.anime[i].names[0]}}</button>
     
-               <button *ngIf="this.completed[i] > 5" style="background-color: rgb(194, 89, 112); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;"></button>
-               <button *ngIf="this.completed[i] > 1" style="background-color: rgb(194, 89, 112); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;"></button>
-               <button *ngIf="this.completed[i] > 2" style="background-color: rgb(194, 89, 112); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;"></button>
-               <button *ngIf="this.completed[i] > 3" style="background-color: rgb(194, 89, 112); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;"></button>
-               <button *ngIf="this.completed[i] > 4" style="background-color: rgb(194, 89, 112); width: 25px; height: 100%;   border-style: none;border-radius: 8px; margin-right: 2px;"></button>
+               <button *ngIf="this.completed[i] > 5" style="background-color: rgb(194, 89, 112); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;vertical-align:middle;"></button>
+               <button *ngIf="this.completed[i] > 1" style="background-color: rgb(194, 89, 112); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;vertical-align:middle"></button>
+               <button *ngIf="this.completed[i] > 2" style="background-color: rgb(194, 89, 112); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;vertical-align:middle;"></button>
+               <button *ngIf="this.completed[i] > 3" style="background-color: rgb(194, 89, 112); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;vertical-align:middle;"></button>
+               <button *ngIf="this.completed[i] > 4" style="background-color: rgb(194, 89, 112); width: 25px; height: 100%;   border-style: none;border-radius: 8px; margin-right: 2px;vertical-align:middle;"></button>
     
-               <button *ngIf="this.completed[i] == 0" style="background-color: rgb(141, 139, 140); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;"></button>
-               <button *ngIf="this.completed[i] == 0" style="background-color: rgb(141, 139, 140); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;"></button>
-               <button *ngIf="this.completed[i] == 0" style="background-color: rgb(141, 139, 140); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;"></button>
-               <button *ngIf="this.completed[i] == 0" style="background-color: rgb(141, 139, 140); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;"></button>
-               <button *ngIf="this.completed[i] == 0" style="background-color: rgb(141, 139, 140); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;"></button>
+               <button *ngIf="this.completed[i] == 0" style="background-color: rgb(141, 139, 140); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;vertical-align:middle;"></button>
+               <button *ngIf="this.completed[i] == 0" style="background-color: rgb(141, 139, 140); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;vertical-align:middle;"></button>
+               <button *ngIf="this.completed[i] == 0" style="background-color: rgb(141, 139, 140); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;vertical-align:middle;"></button>
+               <button *ngIf="this.completed[i] == 0" style="background-color: rgb(141, 139, 140); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;vertical-align:middle;"></button>
+               <button *ngIf="this.completed[i] == 0" style="background-color: rgb(141, 139, 140); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;vertical-align:middle;"></button>
     
-                <button *ngIf="this.completed[i] <= 5 && this.completed[i] != 0" style="background-color: rgb(98, 192, 98); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;"></button>
-                <button *ngIf="this.completed[i] <= 1 && this.completed[i] != 0" style="background-color: rgb(98, 192, 98); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;"></button>
-                <button *ngIf="this.completed[i] <= 2 && this.completed[i] != 0" style="background-color: rgb(98, 192, 98); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;"></button>
-                <button *ngIf="this.completed[i] <= 3 && this.completed[i] != 0" style="background-color: rgb(98, 192, 98); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;"></button>
-                <button *ngIf="this.completed[i] <= 4 && this.completed[i] != 0" style="background-color: rgb(98, 192, 98); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;"></button>
+                <button *ngIf="this.completed[i] <= 5 && this.completed[i] != 0" style="background-color: rgb(98, 192, 98); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;vertical-align:middle;"></button>
+                <button *ngIf="this.completed[i] <= 1 && this.completed[i] != 0" style="background-color: rgb(98, 192, 98); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;vertical-align:middle;"></button>
+                <button *ngIf="this.completed[i] <= 2 && this.completed[i] != 0" style="background-color: rgb(98, 192, 98); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;vertical-align:middle;"></button>
+                <button *ngIf="this.completed[i] <= 3 && this.completed[i] != 0" style="background-color: rgb(98, 192, 98); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;vertical-align:middle;"></button>
+                <button *ngIf="this.completed[i] <= 4 && this.completed[i] != 0" style="background-color: rgb(98, 192, 98); width: 25px; height: 100%;   border-style: none;border-radius: 8px;margin-right: 2px;vertical-align:middle;"></button>
     
         </div>
         </div>

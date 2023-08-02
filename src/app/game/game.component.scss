@@ -12,9 +12,8 @@
   margin: 5px;
   width: 50%;
   color: #2c2c2c;
-  height: 33px;
-  -ms-transform: translateY(-29%);
-  transform: translateY(-29%);
+  height: 100%;
+  vertical-align:middle;
 
 }
 
@@ -28,17 +27,17 @@
   background-color: rgb(98, 192, 98);
   border-radius: 7px;
   border-style: none;
+  vertical-align:middle;
   color: #adadad;
   cursor: pointer;
-  height: 100%;
+
   font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   font-weight: 500;
   margin: 5px;
   width: 50%;
   color: #2c2c2c;
-  -ms-transform: translateY(-29%);
-  transform: translateY(-29%);
+  height: 100%;
 
 }
 .box {
@@ -76,12 +75,11 @@
   font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   font-weight: 500;
-  height: 100%;
   margin: 5px;
   width: 50%;
   color: #2c2c2c;
-  -ms-transform: translateY(-29%);
-  transform: translateY(-29%);
+  height: 100%;
+  vertical-align:middle;
 
 }
 
