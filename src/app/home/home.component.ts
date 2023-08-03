@@ -33,7 +33,7 @@ constructor(http: HttpClient, private route: ActivatedRoute, private renderer: R
         this.getAnime(Math.floor(Difference_In_Days)-1);
     }
  
-mixpanel.init("23cf03df4416fe8baa559a4819156dd1", { debug: true, track_pageview: false, persistence: 'localStorage' });
+mixpanel.init("23cf03df4416fe8baa559a4819156dd1", { debug: true, track_pageview: true, persistence: 'localStorage' });
 if(Number(localStorage.getItem("Mixpanel")) <= 0){
     const randomNumber = Math.random();
     localStorage.setItem("Mixpanel", randomNumber.toString());
@@ -41,13 +41,7 @@ if(Number(localStorage.getItem("Mixpanel")) <= 0){
     mixpanel.track('Sign Up', {
   'Signup Type': 'Referral'
 })
-} else {
-    mixpanel.identify(Number(localStorage.getItem("Mixpanel")).toString());
-    mixpanel.track('Game', {
-      'Signup Type': 'Referral'
-    })
 }
-
 
 }
 
