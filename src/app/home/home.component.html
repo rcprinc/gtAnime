@@ -18,7 +18,7 @@
             onerror="this.src='../../assets/loading.gif'"></div>
 
             <div *ngIf="this.finished == 1" class="correct">{{this.anime.names[0]}} </div>
-    <div *ngIf="this.finished == 2" class="incorrect"> :( Incorrect <br><br><br> {{this.anime.names[0]}} </div>
+    <div *ngIf="this.finished == 2" class="incorrect"> {{this.anime.names[0]}} </div>
 
 
     <div style="text-align: center;">
@@ -57,6 +57,7 @@
 
         </div>
         <div *ngIf="this.finished == 1" class="correct"> Correct! </div>
+        <div *ngIf="this.finished == 2" class="incorrect"> :( Incorrect </div>
 
         <div *ngIf="this.finished == 0" class="searchBox">
             <input id="search" class="searchInput" (keyup.enter)="search()" type="text" name="" placeholder="Search">
