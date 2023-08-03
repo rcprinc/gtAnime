@@ -1,3 +1,10 @@
+
+<div id="image" style="height: 1px; width: 1px;"><img style="width: 70%; height: 10%;" src={{this.anime.images[1]}}></div>
+<div id="image" style="height: 1px; width: 1px;"><img style="width: 70%; height: 10%;" src={{this.anime.images[2]}}></div>
+<div id="image" style="height: 1px; width: 1px;"><img style="width: 70%; height: 10%;" src={{this.anime.images[3]}}></div>
+<div id="image" style="height: 1px; width: 1px;"><img style="width: 70%; height: 10%;" src={{this.anime.images[4]}}></div>
+
+
 <br>
 <button class="home" [routerLink]="['/home']">Home</button>
 <div style="height: 1700px;">
@@ -6,8 +13,9 @@
     <h1 style="text-align: center; color: #9ba0a3; margin-top: 25px;">Guess the Anime!</h1>
 
 
-    <div id="image" style="text-align: center;"><img style="width: 70%; height: 10%;" src={{this.usingImage}}
-            alt="Image alt text"></div>
+    <div id="image" style="text-align: center;">
+            <img style="width: 70%; height: 10%;" src={{this.usingImage}} 
+            onerror="this.src='../../assets/loading.gif'"></div>
 
             <div *ngIf="this.finished == 1" class="correct">{{this.anime.names[0]}} </div>
     <div *ngIf="this.finished == 2" class="incorrect"> :( Incorrect <br><br><br> {{this.anime.names[0]}} </div>
