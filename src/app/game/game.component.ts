@@ -20,7 +20,7 @@ import { HttpClient } from "@angular/common/http";
     
 
     public getAnimes(){
-        this._http.get<AllAnimes>('https://json.extendsclass.com/bin/413a46e25479').subscribe(animes => {
+        this._http.get<AllAnimes>('https://raw.githubusercontent.com/rcprinc/gameJSON/main/Game.json').subscribe(animes => {
             const today = new Date();
             const start = new Date("07/26/2023");
             var Difference_In_Time = start.getTime() - today.getTime();

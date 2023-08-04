@@ -105,7 +105,7 @@ if(Number(localStorage.getItem("Mixpanel")) <= 0){
     }
 
     private getAnime(id: number){
-        this._http.get<AllAnimes>('https://json.extendsclass.com/bin/413a46e25479').subscribe(anime => {
+        this._http.get<AllAnimes>('https://raw.githubusercontent.com/rcprinc/gameJSON/main/Game.json').subscribe(anime => {
             this.anime = anime.anime[id] 
             this.usingImage = this.anime.images[this.guess-1];
             if(Number(localStorage.getItem(this.anime.day + "c")) > 0){
