@@ -72,6 +72,11 @@
                         *ngIf="this.searchResults.data[i].attributes.titles.en != this.searchResults.data[i].attributes.titles.en_jp">({{this.searchResults.data[i].attributes.titles.en_jp}})</span>
 
                 </button>
+                <button class="button-2" *ngIf="!this.searchResults.data[i].attributes.titles.en && this.searchResults.data[i].attributes.titles.en_jp"
+                (click)="check(this.searchResults.data[i].attributes.titles.en_jp)">
+                {{this.searchResults.data[i].attributes.titles.en_jp}} <br>
+
+            </button>
             </div>
         </div>
 
