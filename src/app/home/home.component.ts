@@ -33,15 +33,16 @@ constructor(http: HttpClient, private route: ActivatedRoute, private renderer: R
         this.getAnime(Math.floor(Difference_In_Days)-1);
     }
  
-mixpanel.init("23cf03df4416fe8baa559a4819156dd1", { debug: true, track_pageview: true, persistence: 'localStorage' });
-if(Number(localStorage.getItem("Mixpanel")) <= 0){
-    const randomNumber = Math.random();
-    localStorage.setItem("Mixpanel", randomNumber.toString());
-    mixpanel.identify(Number(localStorage.getItem("Mixpanel")).toString());
-    mixpanel.track('Sign Up', {
-  'Signup Type': 'Referral'
-})
-}
+
+    if (Number(localStorage.getItem("Mixpanel")) <= 0) {
+        const randomNumber = Math.random();
+        localStorage.setItem("Mixpanel", randomNumber.toString());
+        mixpanel.identify(Number(localStorage.getItem("Mixpanel")).toString());
+        mixpanel.track('Sign Up', {
+            'Signup Type': 'Referral'
+        })
+    }
+    mixpanel.init("23cf03df4416fe8baa559a4819156dd1", { debug: true, track_pageview: true, persistence: 'localStorage' });
 
 }
 
@@ -65,6 +66,9 @@ if(Number(localStorage.getItem("Mixpanel")) <= 0){
                 localStorage.setItem(this.anime.day + 'c',(this.guess - 1).toString())
                 this.completed = this.guess - 1
                 this.guess = 5;
+                mixpanel.track('Correct' + this.anime.day, {
+                    'Signup Type': 'Referral'
+                })
                 return;
             }
         }
@@ -76,6 +80,9 @@ if(Number(localStorage.getItem("Mixpanel")) <= 0){
             localStorage.setItem(this.anime.day + 'c',(this.guess - 1).toString())
             this.completed = this.guess - 1
             this.guess = 5;
+            mixpanel.track('Correct' + this.anime.day, {
+                'Signup Type': 'Referral'
+            })
             return;
         }
         localStorage.setItem(this.anime.day.toString(), this.guess.toString())
@@ -87,6 +94,9 @@ if(Number(localStorage.getItem("Mixpanel")) <= 0){
         if(this.guess == 6){
             this.finished = 2
             localStorage.setItem(this.anime.day + 'c','10');
+            mixpanel.track('In-Correct' + this.anime.day, {
+                'Signup Type': 'Referral'
+            })
         } else{
             this.switchImage(this.guess);
         }
